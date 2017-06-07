@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0"/>
+    <title>全部直播-斗鱼</title>
+    <link rel="stylesheet" href="css/live.css"/>
+</head>
+<body>
+<div id="container">
+<!--header部分-->
+    <div id="header">
+        <a href="http://www.douyu.com" style="background:url(image/logo.png) left center no-repeat"></a>
+        <ul class="navbar">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="live.html" class="checked">直播</a></li>
+            <li class="classify">
+                <a href="directory.html">分类</a>
+                <i></i>
+                <div class="a-list">
+                    <i></i>
+                    <h5>热门分类</h5>
+                    <ul class="btns">
+                        <li><a href="">英雄联盟</a></li>
+                        <li><a href="">炉石传说</a></li>
+                        <li><a href="">DOTA2</a></li>
+                        <li><a href="">主机游戏</a></li>
+                        <li><a href="">守望先锋</a></li>
+                        <li><a href="">阴阳师</a></li>
+                    </ul>
+                    <h5>玩家推荐</h5>
+                    <ul class="btns">
+                        <li><a href="">二次元</a></li>
+                        <li><a href="">格斗游戏</a></li>
+                        <li><a href="">怀旧游戏</a></li>
+                        <li><a href="">我的世界</a></li>
+                        <li><a href="">王者荣耀</a></li>
+                        <li><a href="">皇室战争</a></li>
+                        <li><a href="">街头篮球</a></li>
+                        <li><a href="">DNF</a></li>
+                        <li><a href="">娱乐</a></li>
+                    </ul>
+                    <div class="btn-all">
+                        <a href="/directory">全部&gt;&gt;</a>
+                    </div>
+                    <a href=""><img src="image/advert01.jpg" alt=""/></a>
+                </div>
+            </li>
+            <li class="classify">
+                <a href="#">游戏</a>
+                <i></i>
+                <div class="a-list">
+                    <i></i>
+                    <h5>网游推荐</h5>
+                    <ul class="btns">
+                        <li><a href="">西游伏妖篇</a></li>
+                        <li><a href="">蓝月传奇</a></li>
+                        <li><a href="">神仙劫</a></li>
+                        <li><a href="">烈火封神</a></li>
+                        <li><a href="">乾坤战绩</a></li>
+                        <li><a href="">第一舰队</a></li>
+                    </ul>
+                    <div class="btn-all">
+                        <a href="/directory">全部&gt;&gt;</a>
+                    </div>
+                    <h5>手游推荐</h5>
+                    <ul class="btns">
+                        <li><a href="">龙之谷</a></li>
+                        <li><a href="">轩辕剑3</a></li>
+                        <li><a href="">妖萌战姬</a></li>
+                        <li><a href="">口袋妖怪VS</a></li>
+                        <li><a href="">刀剑乱舞</a></li>
+                        <li><a href="">永恒之歌</a></li>
+                    </ul>
+                    <div class="btn-all">
+                        <a href="/directory">全部&gt;&gt;</a>
+                    </div>
+                    <a href=""><img src="image/advert02.jpg" alt=""/></a>
+                </div>
+            </li>
+            <li><a href="#">鱼吧</a></li>
+        </ul>
+        <div id="activity">
+            <a href="http://www.douyu.com/t/kuanghuan"></a>
+        </div>
+
+        <ul id="usercenter">
+            <li class="search">
+                <input type="text" placeholder="msi"/>
+                <a href="#" class="icofont-search"></a>
+            </li>
+            <li class="download">
+                <a href="#">
+                    <b class="dwn"></b>
+                    <span>下载 <i class="triangle-down"></i></span>
+                </a>
+                <div class="tool-download">
+                    <i></i>
+                    <ul>
+                        <li><a href="">App下载</a></li>
+                        <li><a href="">主播工具下载</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="login">
+                <i class="user"></i>
+                <a href="#" class="login-lgn">登录</a>
+                <span>|</span>
+                <a href="#" class="register-rgs">注册</a>
+            </li>
+        </ul>
+        <div id="modal-box">
+            <div class="loginbox">
+                <div class="loginbox-close"></div>
+                <div class="loginbox-hd">
+                    <h3>登录斗鱼</h3>
+                    <p>没有账号？<a href="">5秒注册&gt;</a></p>
+                </div>
+                <form action="data/login.php" method="post">
+                    <div class="loginbox-bd">
+                        <div class="logintype">
+                            <span class="selected">昵称登录</span>
+                            <b> | </b>
+                            <span>手机登录</span>
+                        </div>
+                        <div class="loginbox-input uname">
+                            <span class="icon-uname"></span>
+                            <input type="text" placeholder="输入昵称" name="uname"/>
+                        </div>
+                        <div class="loginbox-input upwd">
+                            <span class="icon-upwd"></span>
+                            <input type="password" placeholder="输入密码" name="upwd"/>
+                        </div>
+                        <div class="loginbox-check">
+                            <i><img src="image/icon-check-lg.png" alt=""/></i>
+                            <span>点击按钮进行验证</span>
+                        </div>
+                        <div class="login-btn">
+                            <input type="submit" value="登录"/>
+                            <p>
+                                <a href="">English Mode</a>
+                                <a href="">忘记密码？</a>
+                            </p>
+                        </div>
+                        <p class="other-login">其他登录方式</p>
+                        <div class="third-list">
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                    </div>
+                </form>
+                <div class="loginbox-scanicon"></div>
+            </div>
+            <div class="registerbox">
+                <div class="loginbox-close"></div>
+                <div class="loginbox-hd">
+                    <h3>注册斗鱼</h3>
+                    <p>已有斗鱼账号？<a href="">马上登录&gt;</a></p>
+                </div>
+                <form action="data/register.php">
+                    <div class="loginbox-bd">
+                        <div class="loginbox-input uname">
+                            <span class="icon-uname"></span>
+                            <input type="text" placeholder="输入昵称"/>
+                        </div>
+                        <div class="loginbox-input upwd">
+                            <span class="icon-upwd"></span>
+                            <input type="password" placeholder="输入密码"/>
+                        </div>
+                        <div class="loginbox-input upwd">
+                            <span class="icon-upwd"></span>
+                            <input type="password" placeholder="确认密码"/>
+                        </div>
+                        <div class="loginbox-check">
+                            <i><img src="image/icon-check-lg.png" alt=""/></i>
+                            <span>点击按钮进行验证</span>
+                        </div>
+                        <div class="login-btn">
+                            <input type="submit" value="立即注册"/>
+                            <p>
+                                <a href="">English Mode</a>
+                            </p>
+                        </div>
+                        <p class="other-login">第三方软件直接登录</p>
+                        <div class="third-list">
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<!--left部分-->
+    <div id="left-box">
+        <div id="left">
+            <!--四大频道区域-->
+            <div class="channel-cate">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="icon-live"></i>
+                            <span>全部直播</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-allType"></i>
+                            <span>全部分类</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-rank"></i>
+                            <span>排行榜</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-focus"></i>
+                            <span>我的关注</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-gameCenter"></i>
+                            <span>页游中心</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--leftnav-cate-->
+            <div id="leftnav-cate">
+                <div class="column">
+                    <ul>
+                        <li class="checked">栏目</li>
+                        <li>发现</li>
+                    </ul>
+                </div>
+                <!--热门游戏、客厅游戏、移动游戏。。。-->
+                <div class="allType">
+                    <dl>
+                        <!--1楼-热门游戏-->
+                        <dt>
+                            <a href="#">
+                                <i></i>
+                                <span>热门游戏</span>
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">英雄联盟</a></li>
+                                <li><a href="#">炉石传说</a></li>
+                                <li><a href="#">DOTA2</a></li>
+                                <li><a href="#">穿越火线</a></li>
+                                <li><a href="#">魔兽世界</a></li>
+                                <li><a href="#">守望先锋</a></li>
+                                <li><a href="#">格斗游戏</a></li>
+                                <li><a href="#">DNF</a></li>
+                                <li><a href="#">棋牌娱乐</a></li>
+                                <li><a href="#">CS:GO</a></li>
+                                <li><a href="#">魔兽争霸</a></li>
+                                <li><a href="#">全部&gt;&gt;</a></li>
+                            </ul>
+                        </dd>
+                        <!--2楼-客厅游戏-->
+                        <dt>
+                            <a href="#">
+                                <i></i>
+                                <span>客厅游戏</span>
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">主机游戏</a></li>
+                                <li><a href="#">跳伞求生</a></li>
+                                <li><a href="#">绝地求生</a></li>
+                                <li><a href="#">我的世界</a></li>
+                                <li><a href="#">怀旧游戏</a></li>
+                                <li><a href="#">饥荒</a></li>
+                                <li><a href="#">掌机游戏</a></li>
+                                <li><a href="#">七日杀</a></li>
+                                <li><a href="#">全部&gt;&gt;</a></li>
+                            </ul>
+                        </dd>
+                        <!--3楼-移动游戏-->
+                        <dt>
+                            <a href="#">
+                                <i></i>
+                                <span>移动游戏</span>
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">王者荣耀</a></li>
+                                <li><a href="#">天天狼人杀</a></li>
+                                <li><a href="#">阴阳师</a></li>
+                                <li><a href="#">天龙八部</a></li>
+                                <li><a href="#">新游中心</a></li>
+                                <li><a href="#">火影忍者</a></li>
+                                <li><a href="#">二次元手游</a></li>
+                                <li><a href="#">球球大作战</a></li>
+                                <li><a href="#">全部&gt;&gt;</a></li>
+                            </ul>
+                        </dd>
+                        <!--4楼-鱼乐星天地-->
+                        <dt>
+                            <a href="#">
+                                <i></i>
+                                <span>鱼乐星天地</span>
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">颜值</a></li>
+                                <li><a href="#">美食</a></li>
+                                <li><a href="#">星秀</a></li>
+                                <li><a href="#">二次元</a></li>
+                                <li><a href="#">环球鱼乐</a></li>
+                                <li><a href="#">户外</a></li>
+                                <li><a href="#">时尚</a></li>
+                                <li><a href="#">音乐</a></li>
+                                <li><a href="#">全部&gt;&gt;</a></li>
+                            </ul>
+                        </dd>
+                        <!-- 5楼-科技-->
+                        <dt>
+                            <a href="#">
+                                <i></i>
+                                <span>科技</span>
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">数码科技</a></li>
+                                <li><a href="#">汽车</a></li>
+                                <li><a href="#">财经</a></li>
+                                <li><a href="#">科普</a></li>
+                                <li><a href="#">军事</a></li>
+                                <li><a href="#">全部&gt;&gt;</a></li>
+                            </ul>
+                        </dd>
+                        <!--6楼-文娱课堂-->
+                        <dt>
+                            <a href="#">
+                                <i></i>
+                                <span>文娱课堂</span>
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">鱼教</a></li>
+                                <li><a href="#">鱼艺</a></li>
+                                <li><a href="#">视听点评</a></li>
+                                <li><a href="#">企鹅直播</a></li>
+                                <li><a href="#">体育赛场</a></li>
+                                <li><a href="#">全部&gt;&gt;</a></li>
+                            </ul>
+                        </dd>
+                        <!--7楼-正能量-->
+                        <dt>
+                            <a href="#">
+                                <i></i>
+                                <span>正能量</span>
+                            </a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">正能量</a></li>
+                                <li><a href="#">全部&gt;&gt;</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!--left-footer部分-->
+        <div id="left-footer">
+            <ul>
+                <li>直播指导</li>
+                <li>客服支持</li>
+                <li>12318举报</li>
+            </ul>
+        </div>
+    </div>
+<!--main所有在线直播-->
+    <div id="main-box">
+        <div id="main">
+            <div class="title">
+                <div class="live">新秀直播</div>
+                <div class="switch">换一换</div>
+            </div>
+            <div class="all-live">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i></i>
+                            <img src="image/new-liver01.jpg" alt=""/>
+                            <div class="live-title">
+                                <p>【YJJPP】今天手感好</p>
+                                <b>守望先锋</b>
+                            </div>
+                            <p>yjjimpaopao</p>
+                        </a>
+                    </li
+                    ><li>
+                        <a href="">
+                            <i></i>
+                            <img src="image/new-liver02.jpg" alt=""/>
+                            <div class="live-title">
+                                <p>混动车用纯电能否跑完上海外环？</p>
+                                <b>汽车</b>
+                            </div>
+                            <p>司机的自我休养</p>
+                        </a>
+                    </li
+                    ><li>
+                        <a href="">
+                            <i></i>
+                            <img src="image/new-liver03.jpg" alt=""/>
+                            <div class="live-title">
+                                <p>乌鸦：武斗祭or新版本！</p>
+                                <b>火影忍者</b>
+                            </div>
+                            <p>王者之路乌鸦</p>
+                        </a>
+                    </li
+                    ><li>
+                        <a href="">
+                            <i></i>
+                            <img src="image/new-liver04.jpg" alt=""/>
+                            <div class="live-title">
+                                <p>亚鹰：不吹不黑今天新号直升6000~</p>
+                                <b>皇室战争</b>
+                            </div>
+                            <p>大唐亚洲之鹰</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--在线直播-->
+            <div class="title">
+                <div class="live online">在线直播</div>
+                <ul>
+                    <li><a href="" class="checked">全部</a></li>
+                    <li><a href="">热门游戏</a></li>
+                    <li><a href="">王者荣耀</a></li>
+                    <li><a href="">客厅游戏</a></li>
+                    <li><a href="">移动游戏</a></li>
+                    <li><a href="">鱼乐星天地</a></li>
+                    <!--<li><a href="">颜值</a></li>-->
+                    <!--<li><a href="">科技</a></li>-->
+                    <!--<li><a href="">文娱课堂</a></li>-->
+                </ul>
+                <div class="title-right">
+                    <img src="image/new-phonegame.png"/>
+                    <a href="">精彩视频</a>
+                </div>
+            </div>
+            <div class="all-live">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i></i>
+                            <img src="image/online-liver01.jpg" alt=""/>
+                            <div class="live-title">
+                                <p>  【不爆不做】桃十五❤   叫我胆小鬼- </p>
+                                <b>音乐</b>
+                            </div>
+                            <p>桃桃桃15<span>14.9万</span></p>
+                        </a>
+                    </li
+                    ><li>
+                        <a href="">
+                            <i></i>
+                            <img src="image/online-liver02.jpg" alt=""/>
+                            <div class="live-title">
+                                <p> 菠萝❤今晚唱唱歌拼拼豆 </p>
+                                <b>二次元</b>
+                            </div>
+                            <p>菠萝赛东<span>1.4万</span></p>
+                        </a>
+                    </li
+                    ><li>
+                        <a href="">
+                            <i></i>
+                            <img src="image/online-liver03.jpg" alt=""/>
+                            <div class="live-title">
+                                <p> 英雄连2 全阵营指挥官高手！（不存在的）</p>
+                                <b>主机游戏</b>
+                            </div>
+                            <p>小游联盟信仰<span>4207</span></p>
+                        </a>
+                    </li
+                    ><li>
+                        <a href="">
+                            <i></i>
+                            <img src="image/online-liver04.jpg" alt=""/>
+                            <div class="live-title">
+                                <p> 卢本伟White五五开 回家直播了！</p>
+                                <b>英雄联盟</b>
+                            </div>
+                            <p>White55开解说<span>209万</span></p>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i></i>
+                            <img src="image/online-liver05.jpg" alt=""/>
+                            <div class="live-title">
+                                <p>  第一李白五排带白金水友上分 </p>
+                                <b>王者荣耀</b>
+                            </div>
+                            <p>晓风丶残玥<span>2.4万</span></p>
+                        </a>
+                    </li
+                    ><li>
+                    <a href="">
+                        <i></i>
+                        <img src="image/online-liver06.jpg" alt=""/>
+                        <div class="live-title">
+                            <p> ZHA男：表面兄弟K神失恋了 </p>
+                            <b>皇室战争</b>
+                        </div>
+                        <p>主任4444l死了<span>5876</span></p>
+                    </a>
+                </li
+                ><li>
+                    <a href="">
+                        <i></i>
+                        <img src="image/online-liver07.jpg" alt=""/>
+                        <div class="live-title">
+                            <p> 斗鱼最努力主播  免费看号 </p>
+                            <b>光明大陆</b>
+                        </div>
+                        <p>李晓皮<span>5034</span></p>
+                    </a>
+                </li
+                ><li>
+                    <a href="">
+                        <i></i>
+                        <img src="image/online-liver08.jpg" alt=""/>
+                        <div class="live-title">
+                            <p> 天文、宇航；关心地球之外的一切</p>
+                            <b>科普</b>
+                        </div>
+                        <p>艾拉斯贝太空网<span>2.3万</span></p>
+                    </a>
+                </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i></i>
+                            <img src="image/online-liver09.jpg" alt=""/>
+                            <div class="live-title">
+                                <p>   杨毅侃球 季后赛那些事儿 </p>
+                                <b>企鹅直播</b>
+                            </div>
+                            <p>科比pp<span>1.1万</span></p>
+                        </a>
+                    </li
+                    ><li>
+                    <a href="">
+                        <i></i>
+                        <img src="image/online-liver10.jpg" alt=""/>
+                        <div class="live-title">
+                            <p>  季中冠军赛总决赛SKTvsG2重播  </p>
+                            <b>英雄联盟</b>
+                        </div>
+                        <p>英雄联盟官方赛事<span>130万</span></p>
+                    </a>
+                </li
+                ><li>
+                    <a href="">
+                        <i></i>
+                        <img src="image/online-liver11.jpg" alt=""/>
+                        <div class="live-title">
+                            <p> 九日：干将莫邪专场 </p>
+                            <b>王者荣耀</b>
+                        </div>
+                        <p>九日98号技师<span>68.2万</span></p>
+                    </a>
+                </li
+                ><li>
+                    <a href="">
+                        <i></i>
+                        <img src="image/online-liver12.jpg" alt=""/>
+                        <div class="live-title">
+                            <p>  美女与野兽的48小时城市生存 </p>
+                            <b>汽车</b>
+                        </div>
+                        <p>疯狂的二表哥<span>4.3万</span></p>
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/live.js"></script>
+</body>
+</html>

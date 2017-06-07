@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>斗鱼-每个人的直播平台</title>
+    <link rel="stylesheet" href="css/live.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+
+</head>
+<body>
+<!--header-->
+<div id="header">
+    <a href="http://www.douyu.com" style="background:url(image/logo.png) left center no-repeat"></a>
+    <ul class="navbar">
+        <li><a href="index.html" class="checked">首页</a></li>
+        <li><a href="live.html">直播</a></li>
+        <li class="classify">
+            <a href="directory.html">分类</a>
+            <i></i>
+            <div class="a-list">
+                <i></i>
+                <h5>热门分类</h5>
+                <ul class="btns">
+                    <li><a href="">英雄联盟</a></li>
+                    <li><a href="">炉石传说</a></li>
+                    <li><a href="">DOTA2</a></li>
+                    <li><a href="">主机游戏</a></li>
+                    <li><a href="">守望先锋</a></li>
+                    <li><a href="">阴阳师</a></li>
+                </ul>
+                <h5>玩家推荐</h5>
+                <ul class="btns">
+                    <li><a href="">二次元</a></li>
+                    <li><a href="">格斗游戏</a></li>
+                    <li><a href="">怀旧游戏</a></li>
+                    <li><a href="">我的世界</a></li>
+                    <li><a href="">王者荣耀</a></li>
+                    <li><a href="">皇室战争</a></li>
+                    <li><a href="">街头篮球</a></li>
+                    <li><a href="">DNF</a></li>
+                    <li><a href="">娱乐</a></li>
+                </ul>
+                <div class="btn-all">
+                    <a href="/directory">全部&gt;&gt;</a>
+                </div>
+                <a href=""><img src="image/advert01.jpg" alt=""/></a>
+            </div>
+        </li>
+        <li class="classify">
+            <a href="#">游戏</a>
+            <i></i>
+            <div class="a-list">
+                <i></i>
+                <h5>网游推荐</h5>
+                <ul class="btns">
+                    <li><a href="">西游伏妖篇</a></li>
+                    <li><a href="">蓝月传奇</a></li>
+                    <li><a href="">神仙劫</a></li>
+                    <li><a href="">烈火封神</a></li>
+                    <li><a href="">乾坤战绩</a></li>
+                    <li><a href="">第一舰队</a></li>
+                </ul>
+                <div class="btn-all">
+                    <a href="/directory">全部&gt;&gt;</a>
+                </div>
+                <h5>手游推荐</h5>
+                <ul class="btns">
+                    <li><a href="">龙之谷</a></li>
+                    <li><a href="">轩辕剑3</a></li>
+                    <li><a href="">妖萌战姬</a></li>
+                    <li><a href="">口袋妖怪VS</a></li>
+                    <li><a href="">刀剑乱舞</a></li>
+                    <li><a href="">永恒之歌</a></li>
+                </ul>
+                <div class="btn-all">
+                    <a href="/directory">全部&gt;&gt;</a>
+                </div>
+                <a href=""><img src="image/advert02.jpg" alt=""/></a>
+            </div>
+        </li>
+        <li><a href="#">鱼吧</a></li>
+    </ul>
+    <div id="activity">
+        <a href="http://www.douyu.com/t/kuanghuan"></a>
+    </div>
+
+    <ul id="usercenter">
+        <li class="search">
+            <input type="text" placeholder="msi"/>
+            <a href="#" class="icofont-search"></a>
+        </li>
+        <li class="download">
+            <a href="#">
+                <b class="dwn"></b>
+                <span>下载 <i class="triangle-down"></i></span>
+            </a>
+            <div class="tool-download">
+                <i></i>
+                <ul>
+                    <li><a href="">App下载</a></li>
+                    <li><a href="">主播工具下载</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="login">
+            <i class="user"></i>
+            <a href="#" class="login-lgn">登录</a>
+            <span>|</span>
+            <a href="#" class="register-rgs">注册</a>
+        </li>
+    </ul>
+    <div id="modal-box">
+        <div class="loginbox">
+            <div class="loginbox-close"></div>
+            <div class="loginbox-hd">
+                <h3>登录斗鱼</h3>
+                <p>没有账号？<a href="">5秒注册&gt;</a></p>
+            </div>
+            <form action="data/login.php" method="post">
+                <div class="loginbox-bd">
+                    <div class="logintype">
+                        <span class="selected">昵称登录</span>
+                        <b> | </b>
+                        <span>手机登录</span>
+                    </div>
+                    <div class="loginbox-input uname">
+                        <span class="icon-uname"></span>
+                        <input type="text" placeholder="输入昵称" name="uname"/>
+                    </div>
+                    <div class="loginbox-input upwd">
+                        <span class="icon-upwd"></span>
+                        <input type="password" placeholder="输入密码" name="upwd"/>
+                    </div>
+                    <div class="loginbox-check">
+                        <i><img src="image/icon-check-lg.png" alt=""/></i>
+                        <span>点击按钮进行验证</span>
+                    </div>
+                    <div class="login-btn">
+                        <input type="submit" value="登录"/>
+                        <p>
+                            <a href="">English Mode</a>
+                            <a href="">忘记密码？</a>
+                        </p>
+                    </div>
+                    <p class="other-login">其他登录方式</p>
+                    <div class="third-list">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </form>
+            <div class="loginbox-scanicon"></div>
+        </div>
+        <div class="registerbox">
+            <div class="loginbox-close"></div>
+            <div class="loginbox-hd">
+                <h3>注册斗鱼</h3>
+                <p>已有斗鱼账号？<a href="">马上登录&gt;</a></p>
+            </div>
+            <form action="data/register.php" method="post">
+                <div class="loginbox-bd">
+                    <div class="loginbox-input uname">
+                        <span class="icon-uname"></span>
+                        <input type="text" placeholder="输入昵称" name="uname"/>
+                    </div>
+                    <div class="loginbox-input upwd">
+                        <span class="icon-upwd"></span>
+                        <input type="password" placeholder="输入密码" name="upwd"/>
+                    </div>
+                    <div class="loginbox-input upwd">
+                        <span class="icon-upwd"></span>
+                        <input type="password" placeholder="确认密码"/>
+                    </div>
+                    <div class="loginbox-check">
+                        <i><img src="image/icon-check-lg.png" alt=""/></i>
+                        <span>点击按钮进行验证</span>
+                    </div>
+                    <div class="login-btn">
+                        <input type="submit" value="立即注册"/>
+                        <p>
+                            <a href="">English Mode</a>
+                        </p>
+                    </div>
+                    <p class="other-login">第三方软件直接登录</p>
+                    <div class="third-list">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--页面主体部分-->
+<div id="mainbody">
+    <!--banner广告部分-->
+    <div class="banner">
+        <div class="channel">
+            <div class="left-item">
+                <video src="" poster="image/video-poster.png" autoplay loop muted></video>
+            </div>
+            <div class="right-items">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="pic">
+                                <img src="image/channel01.jpg" alt=""/>
+                            </div>
+                            <div class="txt">
+                                <span>王者荣耀职业联赛</span>
+                            </div>
+                        </a>
+                    </li
+                    ><li>
+                        <a href="#">
+                            <div class="pic">
+                                <img src="image/channel02.jpg" alt=""/>
+                            </div>
+                            <div class="txt">
+                                <span>灵魂画师幺幺</span>
+                            </div>
+                        </a>
+                    </li
+                    ><li>
+                        <a href="#">
+                            <div class="pic">
+                                <img src="image/channel03.jpg" alt=""/>
+                            </div>
+                            <div class="txt">
+                                <span>斗鱼嘉年华</span>
+                            </div>
+                        </a>
+                    </li
+                    ><li>
+                        <a href="#">
+                            <div class="pic">
+                                <img src="image/channel04.jpg" alt=""/>
+                            </div>
+                            <div class="txt checked">
+                                <span>指挥官集结令</span>
+                            </div>
+                        </a>
+                    </li
+                    ><li>
+                        <a href="#">
+                            <div class="pic">
+                                <img src="image/channel05.jpg" alt=""/>
+                            </div>
+                            <div class="txt">
+                                <span>马尼拉大师赛</span>
+                            </div>
+                        </a>
+                    </li
+                    ><li>
+                        <a href="#">
+                            <div class="pic">
+                                <img src="image/channel06.jpg" alt=""/>
+                            </div>
+                            <div class="txt">
+                                <span>天刀两周年</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--starshow-->
+            <div class="starshow">
+                <div class="s-content">
+                    <div class="s-classify">
+                        <h3>
+                            <i><img src="image/icon-classify01.png" alt=""/></i>
+                            <a href="">御宅领域</a>
+                            <span>冲破次元壁垒</span>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="pic">
+                                        <img src="image/s-classify-pic01.png" alt=""/>
+                                        <b></b>
+                                        <span class="txt">【十三】你的安眠屋</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="pic">
+                                        <img src="image/s-classify-pic02.png" alt=""/>
+                                        <b></b>
+                                        <span class="txt">嘉年华第三天：武汉大学里有什么呢！</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="pic">
+                                        <img src="image/s-classify-pic03.png" alt=""/>
+                                        <b></b>
+                                        <span class="txt">早上好。。。。。</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="pic">
+                                        <img src="image/s-classify-pic04.png" alt=""/>
+                                        <b></b>
+                                        <span class="txt">我还能再看一集</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="s-classify">
+                        <h3>
+                            <i><img src="image/icon-classify02.png" alt=""/></i>
+                            <a href="">鲜肉女神</a>
+                            <span>颜值燃爆眼球</span>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="pic">
+                                        <img src="image/s-classify-pic05.png" alt=""/>
+                                        <b></b>
+                                        <span class="txt">新主播，大家来点个关注吧</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="pic">
+                                        <img src="image/s-classify-pic06.png" alt=""/>
+                                        <b></b>
+                                        <span class="txt">不求人气不求礼物 只求你no bb~~</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="pic">
+                                        <img src="image/s-classify-pic07.png" alt=""/>
+                                        <b></b>
+                                        <span class="txt">借我十年，借我亡命天涯的勇敢。</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="pic">
+                                        <img src="image/s-classify-pic08.png" alt=""/>
+                                        <b></b>
+                                        <span class="txt">merons：期待下一个节日了</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="s-classify">
+                        <h3>
+                            <i><img src="image/icon-classify03.png" alt=""/></i>
+                            <a href="">王者荣耀</a>
+                            <span>英雄热血竞技</span>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="pic">
+                                        <img src="image/s-classify-pic09.png" alt=""/>
+                                        <b></b>
+                                        <span class="txt">这韩信有点皮？</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="pic">
+                                        <img src="image/s-classify-pic10.png" alt=""/>
+                                        <b></b>
+                                        <span class="txt">QQ区青铜有人吗？</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="pic">
+                                        <img src="image/s-classify-pic11.png" alt=""/>
+                                        <b></b>
+                                        <span class="txt">斗鱼第一女鲁班免费带水友！</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="pic">
+                                        <img src="image/s-classify-pic12.png" alt=""/>
+                                        <b></b>
+                                        <span class="txt">POGO:国服最骚橘子欢迎骚扰~~~~</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--row-1-->
+    <div class="row-1">
+        <div class="col-1">
+            <a href=""><img src="image/row-1-pic01.jpg" alt=""/></a>
+        </div>
+        <div class="col-2">
+            <a href=""><img src="image/row-1-pic02.jpg" alt=""/></a>
+            <a href=""><img src="image/row-1-pic03.jpg" alt=""/></a>
+            <a href=""><img src="image/row-1-pic04.jpg" alt=""/></a>
+        </div>
+        <div class="col-3">
+            <div class="col-3-top">
+                <a href="">
+                    <h3>斗鱼嘉年华独占江滩 邀你尽情狂欢！</h3>
+                    <p>大牌明星主播云集江滩 抢票开启售完即止</p>
+                </a>
+                <a href="">
+                    <h3>斗鱼商城火热上线 定制好礼等你来拿</h3>
+                    <p>斗鱼业界首创 直播电商平台鱼购重磅登场</p>
+                </a>
+                <a href="">
+                    <h3>玩转斗鱼嘉年华 集章领取限量周边！</h3>
+                    <p>精美周边免费送 斗鱼嘉年华就是这么任性</p>
+                </a>
+            </div>
+            <div class="col-3-bottom">
+                <ul>
+                    <li>
+                        <span>[新闻]</span>
+                        <a href="">无限制机器人决斗大赛 现场火花四溅</a>
+                    </li>
+                    <li>
+                        <span>[新闻]</span>
+                        <a href="">高校决赛拉开战幕 战队展现惊人实力</a>
+                    </li>
+                    <li>
+                        <span>[新闻]</span>
+                        <a href="">斗鱼嘉年华美食节 点燃全城吃货热情</a>
+                    </li>
+                    <li>
+                        <span>[新闻]</span>
+                        <a href="">飞凡食客城市挑战赛 6月6日食战八方</a>
+                    </li>
+                    <li>
+                        <span>[新闻]</span>
+                        <a href="">2017超级碗豪客赛 邀您共享徳扑盛宴</a>
+                    </li>
+                    <li>
+                        <span>直播指南</span>
+                        <a href="">斗鱼直播伴侣——手播竖屏教程</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="col-4-top">
+                <div class="hot-bg classify"><span>热门</span></div
+                ><div class="webplay-bg classify"><span>页游</span></div
+                ><div class="phoneplay-bg classify"><span>手游</span></div>
+            </div>
+            <div class="hot-play common">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="image/hot-play01.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="image/hot-play02.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="image/hot-play03.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="image/hot-play04.png" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="webplay common">
+
+            </div>
+            <div class="phoneplay common">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
